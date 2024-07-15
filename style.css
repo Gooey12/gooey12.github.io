@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92cc41;
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.header {
+    margin: 25px;
+    font-size: 64px;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-me, .socials {
+    border: 3px solid black;
+    width: 80%;
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me::after, .socials::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-me {
+    margin-bottom: 10px;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icons a {
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        font-size: 48px;
+    }
+
+    .about-me, .socials {
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .icons img {
+        width: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 32px;
+    }
+
+    .about-me, .socials {
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .icons img {
+        width: 30px;
+    }
+}
