@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
+    cursor: url(cursor.png), auto;
     user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
